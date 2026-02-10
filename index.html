@@ -1,0 +1,233 @@
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sharky's Imperial Military - Portfolio</title>
+    
+    <script>
+        // Suppress Tailwind CDN warning
+        if (typeof console !== 'undefined' && console.warn) {
+            const originalWarn = console.warn;
+            console.warn = function(...args) {
+                if (args[0] && typeof args[0] === 'string' && args[0].includes('tailwindcss.com')) return;
+                originalWarn.apply(console.warn, args);
+            };
+        }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* Ensures the project card links fill the whole card area */
+        .project-card a {
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="body-main" data-theme="dark" data-lang="en" data-dir="ltr">
+    
+    <div class="loader-screen" id="loader">
+        <div class="loader-content">
+            <div class="loader-code-text">
+                <div class="code-line" data-line="1">const game = {</div>
+                <div class="code-line" data-line="2">  loading: true,</div>
+                <div class="code-line" data-line="3">  status: 'initializing...'</div>
+                <div class="code-line" data-line="4">};</div>
+            </div>
+            <div class="loader-spinner-wrapper"><div class="loader-spinner"></div></div>
+            <div class="loader-progress-wrapper"><div class="loader-progress-bar"></div></div>
+            <div class="loader-percentage" id="loaderPercent">0%</div>
+        </div>
+    </div>
+
+    <header class="main-header" id="header">
+        <nav class="nav-container">
+            <div class="nav-brand">
+                <div class="brand-logo">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-text">SIM</span>
+                    <span class="logo-bracket">/&gt;</span>
+                </div>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active" data-section="home"><i class="fas fa-home"></i><span class="nav-text">Home</span></a>
+                <a href="#about" class="nav-link" data-section="about"><i class="fas fa-user"></i><span class="nav-text">About</span></a>
+                <a href="#skills" class="nav-link" data-section="skills"><i class="fas fa-shield-halved"></i><span class="nav-text">Divisions</span></a>
+                <a href="#experience" class="nav-link" data-section="experience"><i class="fas fa-clock-rotate-left"></i><span class="nav-text">Latest Updates</span></a>
+                <a href="#projects" class="nav-link" data-section="projects"><i class="fas fa-rocket"></i><span class="nav-text">Other Projects</span></a>
+                <a href="#contact" class="nav-link" data-section="contact"><i class="fas fa-envelope"></i><span class="nav-text">Contact</span></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section id="home" class="hero-section">
+            <div class="hero-container flex flex-col md:flex-row items-center justify-between">
+                <div class="hero-content md:w-1/2">
+                    <div class="hero-greeting"><span class="greeting-text">Welcome to</span><span class="greeting-cursor">|</span></div>
+                    <h1 class="hero-name" id="heroName">
+                        <span class="name-prefix">Sharky's Imperial Military</span>
+                        <span class="name-operator">=</span>
+                        <span class="name-value">Sharktank Interactives</span>
+                        <span class="name-suffix">;</span>
+                    </h1>
+                    <div class="hero-title"><span class="title-prefix">//</span><span class="title-text">One of the Leading Star Wars and Game Studios in Roblox.</span></div>
+                    <p class="hero-description">Becoming one of the most immersive and unique Star Wars experiences of all time.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary"><span>Get In Touch</span><i class="fas fa-arrow-right"></i></a>
+                        <a href="#projects" class="btn btn-secondary"><span>View Projects</span><i class="fas fa-code"></i></a>
+                    </div>
+                </div>
+
+                <div class="hero-image-side md:w-1/2 flex justify-center mt-10 md:mt-0">
+                    <div class="image-frame relative p-2 border-2 border-red-600 rounded-lg bg-black/50 shadow-[0_0_20px_rgba(220,38,38,0.5)]">
+                        <img src="YOUR_IMAGE_URL_HERE" alt="Imperial Image" class="max-w-full h-auto rounded shadow-lg" style="max-height: 400px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section about-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-number">01</span>
+                    <h2 class="section-title"><span class="title-bracket">&lt;</span><span class="title-text">About</span><span class="title-bracket">/&gt;</span></h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="about-content">
+                    <div class="about-text-wrapper">
+                        <div class="about-intro">
+                            <p class="about-text">We are building the first-ever Star Wars Nuclear Wasteland Border. This project combines the power of the Galactic Empire with a gritty survival atmosphere, and it's set to be one of the best games on the platform.</p>
+                        </div>
+                    </div>
+                    <div class="about-image-wrapper">
+                        <div class="code-block">
+                            <div class="code-line"><span class="code-keyword">const</span> <span class="code-variable">developer</span> <span class="code-operator">=</span> <span class="code-brace">{</span></div>
+                            <div class="code-line indent"><span class="code-property">name</span><span class="code-operator">:</span> <span class="code-string">'Sharky\'s Imperial Military'</span><span class="code-comma">,</span></div>
+                            <div class="code-line indent"><span class="code-property">Faction</span><span class="code-operator">:</span> <span class="code-string">'The Empire'</span></div>
+                            <div class="code-line"><span class="code-brace">}</span><span class="code-semicolon">;</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section skills-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-number">02</span>
+                    <h2 class="section-title"><span class="title-bracket">&lt;</span><span class="title-text">Divisions</span><span class="title-bracket">/&gt;</span></h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3 class="category-title">Active Divisions</h3>
+                        <div class="skill-items">
+                            <div class="skill-item" data-skill="ICSU" data-percent="13"><div class="skill-header"><span class="skill-name">ICSU</span><span class="skill-percent">13%</span></div><div class="skill-bar"><div class="skill-progress"></div></div></div>
+                            <div class="skill-item" data-skill="ERG" data-percent="35"><div class="skill-header"><span class="skill-name">ERG</span><span class="skill-percent">35%</span></div><div class="skill-bar"><div class="skill-progress"></div></div></div>
+                            <div class="skill-item" data-skill="Shock Troopers" data-percent="45"><div class="skill-header"><span class="skill-name">Shock Troopers</span><span class="skill-percent">45%</span></div><div class="skill-bar"><div class="skill-progress"></div></div></div>
+                            <div class="skill-item" data-skill="Vaders Fist" data-percent="60"><div class="skill-header"><span class="skill-name">Vaders Fist</span><span class="skill-percent">60%</span></div><div class="skill-bar"><div class="skill-progress"></div></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section experience-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-number">03</span>
+                    <h2 class="section-title"><span class="title-bracket">&lt;</span><span class="title-text">Latest Updates</span><span class="title-bracket">/&gt;</span></h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        February 10th, 2026
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Vanity Invite is back!</h3>
+                            <h4>Use discord code gg/swtge</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section projects-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-number">04</span>
+                    <h2 class="section-title"><span class="title-bracket">&lt;</span><span class="title-text">Other Projects</span><span class="title-bracket">/&gt;</span></h2>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <a href="https://www.roblox.com/communities/561225773/SIM-Sharky-s-Imperial-Military" target="_blank"><h3>Sharky's Imperial Military</h3></a>
+                    </div>
+                    <div class="project-card">
+                        <a href="https://www.roblox.com/groups/YOUR_ID_2" target="_blank"><h3>Sharky's Republic Military</h3></a>
+                    </div>
+                    <div class="project-card">
+                        <a href="#"><h3>Coming Soon!</h3></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-number">05</span>
+                    <h2 class="section-title"><span class="title-bracket">&lt;</span><span class="title-text">Contact</span><span class="title-bracket">/&gt;</span></h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-form-wrapper">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" class="form-input" placeholder="Enter your message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="contact-info-wrapper">
+                        <div class="contact-social">
+                            <h3 class="social-title">Social Links</h3>
+                            <div class="social-links">
+                                <a href="https://discord.gg/swtge" class="social-link" target="_blank">
+                                    <i class="fab fa-discord"></i>
+                                    <span>Discord</span>
+                                </a>
+                                <a href="https://www.roblox.com/communities/561225773/SIM-Sharky-s-Imperial-Military" class="social-link" target="_blank">
+                                    <i class="fab fa-roblox"></i>
+                                    <span>Roblox Group</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
